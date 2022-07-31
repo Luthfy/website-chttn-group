@@ -1,0 +1,409 @@
+/* 
+font-family: 'Akshar', sans-serif;
+font-family: 'Almarai', sans-serif; */
+
+:root {
+    --gray: #D9D9D9;
+    --dark: #000000;
+    --white: #FFFFFF;
+    --font-weight-thin: 400;
+}
+
+#about .brands-heading {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#about .about-heading {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+    #about .about .img-profile-container {
+        background-color: #D9D9D9;
+        width: 100%;
+        height: 414px;
+        margin-bottom: 4rem;
+    }
+
+    #about .about .border-rounded-dark {
+        text-decoration: 0;
+        color: #FFFFFF;
+        width: 100%;
+        display: block;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    #about .about .visit-our-store {
+        display: flex;
+        justify-content: space-between;
+    }
+
+        #about .about .visit-our-store span {
+            margin: 4px;
+        }
+
+        #about .about .visit-our-store svg {
+            align-self: center;
+        }
+
+    #about .about .download-our-member {
+        display: flex;
+        justify-content: space-between;
+    }
+
+        #about .about .download-our-member span {
+            margin: 4px;
+        }
+
+        #about .about .download-our-member svg {
+            align-self: center;
+        }
+
+body {
+    background-color: var(--dark);
+}
+
+header {
+    height: 80vh;
+    min-height: 80vh;
+    position: relative;
+    background-color: var(--white);
+    margin-bottom: 60px;
+}
+
+    header .image-illustration {
+        position: absolute;
+        top: 10%;
+        left: 32%;
+    }
+
+    /* HEADERLINK */
+    header .chatbox {
+        position: absolute;
+        top: 80px;
+        left: 400px;
+        display: flex;
+        flex-flow: column;
+    }
+
+        header .chatbox .chatbox-button {
+            text-align: center;
+            width: 124px;
+            text-decoration: none;
+            color: var(--white);
+            margin-bottom: 10px;
+        }
+
+        header .chatbox .chatbox-text {
+            text-align: center;
+            font-weight: var(--font-weight-thin);
+            font-size: 10px;
+            line-height: 10px;
+        }
+
+    header .kost-ungu {
+        position: absolute;
+        top: 220px;
+        left: 240px;
+        display: flex;
+        flex-flow: column;
+    }
+    
+        header .kost-ungu .kost-ungu-button {
+            text-align: center;
+            width: 210px;
+            text-decoration: none;
+            color: var(--white);
+            margin-bottom: 10px;
+        }
+
+        header .kost-ungu .kost-ungu-text {
+            text-align: center;
+            font-weight: var(--font-weight-thin);
+            font-size: 10px;
+            line-height: 10px;
+        }
+
+    header .cempaka-house {
+        position: absolute;
+        top: 360px;
+        left: 200px;
+        display: flex;
+        flex-flow: column;
+    }
+    
+        header .cempaka-house .cempaka-house-button {
+            text-align: center;
+            width: 210px;
+            text-decoration: none;
+            color: var(--white);
+            margin-bottom: 10px;
+        }
+
+        header .cempaka-house .cempaka-house-text {
+            text-align: center;
+            font-weight: var(--font-weight-thin);
+            font-size: 10px;
+            line-height: 10px;
+        }
+
+    header .rupaka {
+        position: absolute;
+        bottom: 30px;
+        left: 400px;
+        display: flex;
+        flex-flow: column;
+    }
+    
+        header .rupaka .rupaka-button {
+            text-align: center;
+            width: 121px;
+            text-decoration: none;
+            color: var(--white);
+            margin-bottom: 10px;
+        }
+
+        header .rupaka .rupaka-text {
+            text-align: center;
+            font-weight: var(--font-weight-thin);
+            font-size: 10px;
+            line-height: 10px;
+        }
+
+    header .chat-barber {
+        position: absolute;
+        top: 60px;
+        right: 360px;
+        display: flex;
+        flex-flow: column;
+    }
+    
+        header .chat-barber .chat-barber-button {
+            text-align: center;
+            width: 147px;
+            text-decoration: none;
+            color: var(--white);
+            margin-bottom: 10px;
+        }
+
+        header .chat-barber .chat-barber-text {
+            text-align: center;
+            font-weight: var(--font-weight-thin);
+            font-size: 10px;
+            line-height: 10px;
+        }
+
+    header .chttn-basic {
+        position: absolute;
+        top: 240px;
+        right: 400px;
+        display: flex;
+        flex-flow: column;
+    }
+    
+        header .chttn-basic .chttn-basic-button {
+            text-align: center;
+            width: 140px;
+            text-decoration: none;
+            color: var(--white);
+            margin-bottom: 10px;
+        }
+
+        header .chttn-basic .chttn-basic-text {
+            text-align: center;
+            font-weight: var(--font-weight-thin);
+            font-size: 10px;
+            line-height: 10px;
+        }
+
+    header .chat-soe {
+        position: absolute;
+        bottom: 160px;
+        right: 320px;
+        display: flex;
+        flex-flow: column;
+    }
+    
+        header .chat-soe .chat-soe-button {
+            text-align: center;
+            width: 215px;
+            text-decoration: none;
+            color: var(--white);
+            margin-bottom: 10px;
+        }
+
+        header .chat-soe .chat-soe-text {
+            text-align: center;
+            font-weight: var(--font-weight-thin);
+            font-size: 10px;
+            line-height: 10px;
+        }
+
+    /* HEADER */
+    header .contact-us {
+        position: absolute;
+        left: 33px;
+        bottom: 40px;
+        display: flex;
+    }
+
+        header .contact-us .icon-sosmed {
+            padding-left: 20px;
+            align-self: center;
+        }
+
+        header .contact-us .contact-us-header {
+            width: 120px;
+            font-size: 10px;
+            text-decoration: none;
+            color: var(--dark);
+            display: flex;
+            justify-content: space-between;
+        }
+
+            header .contact-us .contact-us-header svg {
+                align-self: center;
+            }
+
+    header .get-point-and-redems {
+        position: absolute;
+        right: 33px;
+        top: 230px;
+    }
+
+        header .get-point-and-redems .download-app {
+            width: 206px;
+            font-size: 10px;
+            text-decoration: none;
+            color: var(--dark);
+            display: flex;
+            justify-content: space-between;
+        }
+
+            header .get-point-and-redems .download-app svg {
+                align-self: center;
+            }
+
+    header .text-multiple-brands {
+        position: absolute;
+        left: 33px;
+        top: 60px;
+    }
+
+        header .text-multiple-brands .visit-our-stories {
+            width: 206px;
+            font-size: 10px;
+            text-decoration: none;
+            color: var(--dark);
+            display: flex;
+            justify-content: space-between;
+        }
+
+            header .text-multiple-brands .visit-our-stories svg {
+                align-self: center;
+            }
+
+nav {
+    background-color: var(--white);
+}
+
+    nav .nav-right {
+        padding-top: 6rem;
+    }
+
+    nav .nav-center {
+        padding-top: 4.3rem;
+    }
+
+        nav .nav-center svg {
+            align-self: center;
+        }
+
+    nav .nav-left {
+        padding-top: 1.6rem;
+        padding-bottom: 1.2rem;
+        border-right: 1px solid #000000;;
+    }
+
+        nav .nav-left .learn-more {
+            width: 125px;
+            font-size: 10px;
+            text-decoration: none;
+            color: var(--dark);
+            display: flex;
+            justify-content: space-between;
+        }
+
+            nav .nav-left .learn-more svg {
+                align-self: center;
+            }
+
+
+
+/* COMPONENT */
+.border-rounded {
+    border: 1px solid #000000;
+    border-radius: 25px;
+    padding: 1rem 1.4rem;
+    justify-content: space-between;
+}
+
+.border-rounded-dark {
+    border: 1px solid var(--white);
+    background-color: var(--dark);
+    border-radius: 25px;
+    padding: 1rem 1.4rem;
+    justify-content: space-between;
+}
+
+.border-right {
+    border-right: 10px solid #FFFFFF;
+    padding: 0;
+    margin: 0;
+}
+
+.margin-y {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.text-thin-13 {
+    font-weight: var(--font-weight-thin);
+    font-size: 13px;
+    color: var(--white);
+    line-height: 13px;
+    color: #FFFFFF;
+}
+
+.text-thin-14 {
+    font-weight: var(--font-weight-thin);
+    font-size: 14px;
+    color: var(--white);
+    line-height: 180%;
+}
+
+.text-thin-24 {
+    font-weight: var(--font-weight-thin);
+    font-size: 24px;
+    color: var(--white);
+    line-height: 29px;
+}
+
+hr {
+    background-color: var(--dark);
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.border-right-white {
+    border-right: 1px solid #FFFFFF !important;
+}
+
+.padding-y-3 {
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+}
