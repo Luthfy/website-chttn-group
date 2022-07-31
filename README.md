@@ -1,6 +1,10 @@
 # CHAT GROUP WEBSITE
 This website is slicing project from figma
 
+## LINK PREVIEW
+https://frabjous-sfogliatella-c39e47.netlify.app/chatbox
+
+
 # PROGRESS
 1. Page Home : 60%
    1. Styling Our Service Not Yet (Code)
