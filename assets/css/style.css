@@ -106,3 +106,41 @@ nav {
     width: 100%;
     top: 0;
 }
+
+nav .nav-left a {
+    text-decoration: none;
+}
+
+nav .nav-left a:hover {
+    text-decoration: none;
+    background-color: #F98D2A;
+    border-color: white;
+    color: white;
+}
+
+nav .nav-left a:hover span {
+    color: white !important;
+}
+
+nav .nav-left a:hover img {
+    filter: invert(1);
+}
+
+nav .nav-left a {
+    text-decoration: none;
+}
+
+.rounded a:hover {
+    text-decoration: none;
+    background-color: #F98D2A;
+    border-color: white;
+    color: white;
+}
+
+.rounded a:hover span {
+    color: white !important;
+}
+
+.rounded a:hover img {
+    filter: invert(1);
+}
