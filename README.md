@@ -8,6 +8,7 @@ https://frabjous-sfogliatella-c39e47.netlify.app/chatbox
 # PROGRESS
 1. Page Home : 60%
    1. Styling Our Service Not Yet (Code)
+   
 2. Page Chatbox
 3. Page Rupaka
 4. Page Chatbarber
