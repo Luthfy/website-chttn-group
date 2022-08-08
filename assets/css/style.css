@@ -81,7 +81,6 @@ html {
 
 .border-rounded-white {
     border: 1px solid #FFFFFF;
-    background-color: #000000;
     border-radius: 25px;
     padding: 1rem 1.4rem;
     justify-content: space-between;
