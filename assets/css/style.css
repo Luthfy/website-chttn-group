@@ -1,5 +1,7 @@
 html {
     scroll-behavior: smooth;
+    width: 1440px;
+    margin: auto;
 }
 
 .bg-white {
