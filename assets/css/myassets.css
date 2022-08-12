@@ -1,0 +1,43 @@
+.content-wrapper {
+    width: 1300px;
+    margin: auto;
+}
+
+nav {
+    background-color: #FFFFFF;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.border-rounded {
+    border: 1px solid #000000;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    padding: 1rem 1.4rem;
+    justify-content: space-between;
+}
+
+.border-rounded-white {
+    border: 1px solid #FFFFFF;
+    border-radius: 25px;
+    padding: 1rem 1.4rem;
+    justify-content: space-between;
+    color: #FFFFFF;
+}
+
+.aksar-normal {
+    font-family: 'Akshar';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.almarai-normal {
+    font-family: 'Almarai';
+    font-style: normal;
+    font-weight: 300;
+}
+
+.text-white {
+    color: #FFFFFF;
+}
