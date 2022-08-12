@@ -108,26 +108,26 @@ nav {
     top: 0;
 }
 
-nav .nav-left a {
+nav a {
     text-decoration: none;
 }
 
-nav .nav-left a:hover {
+nav a:hover {
     text-decoration: none;
     background-color: #F98D2A;
     border-color: white;
     color: white;
 }
 
-nav .nav-left a:hover span {
+nav a:hover span {
     color: white !important;
 }
 
-nav .nav-left a:hover img {
+nav a:hover img {
     filter: invert(1);
 }
 
-nav .nav-left a {
+nav a {
     text-decoration: none;
 }
 

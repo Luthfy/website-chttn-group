@@ -10,6 +10,44 @@ nav {
     top: 0;
 }
 
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: none;
+    background-color: #F98D2A;
+    border-color: white;
+    color: white;
+}
+
+nav a:hover span {
+    color: white !important;
+}
+
+nav a:hover img {
+    filter: invert(1);
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.rounded a:hover {
+    text-decoration: none;
+    background-color: #F98D2A;
+    border-color: white;
+    color: white;
+}
+
+.rounded a:hover span {
+    color: white !important;
+}
+
+.rounded a:hover img {
+    filter: invert(1);
+}
+
 .border-rounded {
     border: 1px solid #000000;
     background-color: #FFFFFF;
