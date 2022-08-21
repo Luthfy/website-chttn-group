@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <nav>
+    <nav class="d-none-mobile d-none-ipad">
         <div class="content-wrapper">
             <div style="display: flex; flex-direction: row; justify-content: space-between;">
                 <div style="padding-top: 2rem;padding-bottom: 2rem; margin-left: 0px; width: 243px; border-right: 1px solid #000000; text-align: left;">
@@ -43,10 +43,18 @@
         </div>
         <hr style="width: 100%; margin: 0; padding: 0; height: 1px; background-color: #000000; margin-top: -1px;">
     </nav>
+    
+    <nav class="d-none-desktop text-center" style="padding: 2rem;">
+        <a href="index.html">
+            <img src="assets/img/chttnlogo-black.svg" alt="" srcset="">
+        </a>
+    </nav>
 
-    <div style="background-color: #FFFFFF;height: 158px;margin-bottom: 2px;"></div>
+    <!-- Spasi Untuk Jarak Nav dan Content -->
+    <div class="d-none-mobile" style="background-color: #FFFFFF;height: 158px;margin-bottom: 2px;"></div>
+    <div class="d-none-desktop" style="background-color: #FFFFFF;height: 100px;margin-bottom: 2px;"></div>
 
-    <div style="width: 100%; height: 542px; background-color: #000000;">
+    <div class="d-none-mobile" style="width: 100%; height: 542px; background-color: #000000;">
         <div class="content-wrapper">
             <div style="height: 110px;"></div>
             <img src="assets/img/chatbox.svg" alt="" srcset="" style="display: block; margin: auto; width: 180px;">
@@ -81,9 +89,9 @@
         </div>
     </div>
 
-    <div style="background-color: #FFFFFF;height: 43px;margin-bottom: 2px;"></div>
+    <div class="d-none-mobile" style="background-color: #FFFFFF;height: 43px;margin-bottom: 2px;"></div>
 
-    <section id="about" style="width: 100%;">
+    <section id="about" class="d-none-mobile d-none-ipad" style="width: 100%;">
         <div class="content-wrapper">
             <table class="table-borderless"
                 style="width: 100%; border: 1px solid #000000;">
@@ -128,9 +136,13 @@
         </div>
     </section>
 
-    <div style="background-color: #FFFFFF;height: 14px;margin-bottom: 2px;"></div>
+    <section id="about" class="d-none-desktop" style="width: 100%;">
+        gdgdfgdfgdfgdfgdfgdfgdf
+    </section>
 
-    <div style="height: 118px; background-color: #000000;">
+    <div class="d-none-mobile" style="background-color: #FFFFFF;height: 14px;margin-bottom: 2px;"></div>
+
+    <div class="d-none-mobile" style="height: 118px; background-color: #000000;">
         <div class="content-wrapper">
             <h2 class="aksar-normal text-white" style="font-size: 26px; text-align: center; padding-top: 5rem; margin: 0;">
                 FRIENDLY BARISTA, COMFORTABLE SMALL SPACE, GOOD COFFEE.
@@ -138,9 +150,9 @@
         </div>
     </div>
 
-    <div style="background-color: #FFFFFF;height: 43px;margin-bottom: 2px;"></div>
+    <div class="d-none-mobile" style="background-color: #FFFFFF;height: 43px;margin-bottom: 2px;"></div>
 
-    <section id="menu" style="width: 100%;">
+    <section id="menu" class="d-none-mobile d-none-ipad" style="width: 100%;">
         <div class="content-wrapper">
             <table class="table-borderless"
                 style="width: 100%; border: 1px solid #000000;">
@@ -259,9 +271,9 @@
         </div>
     </section>
 
-    <div style="background-color: #FFFFFF;height: 43px;margin-bottom: 2px;"></div>
+    <div class="d-none-mobile" style="background-color: #FFFFFF;height: 43px;margin-bottom: 2px;"></div>
 
-    <div style="height: 118px; background-color: #000000;">
+    <div class="d-none-mobile" style="height: 118px; background-color: #000000;">
         <div class="content-wrapper">
             <h2 class="aksar-normal text-white" style="font-size: 26px; text-align: center; padding-top: 5rem; margin:0;">
                 <img src="assets/img/instagram.svg" alt="" srcset="" style="margin-right: 4px; margin-top: -4px; height: 24px;">
@@ -270,9 +282,9 @@
         </div>
     </div>
 
-    <div style="background-color: #FFFFFF;height: 20px;margin-bottom: 2px;"></div>
+    <div class="d-none-mobile" style="background-color: #FFFFFF;height: 20px;margin-bottom: 2px;"></div>
 
-    <section id="galeri">
+    <section class="d-none-mobile d-none-ipad" id="galeri">
         <div class="content-wrapper">
             <div style="display: flex; justify-content: center;">
                 <img src="assets/img/chatbox_galeri/1.jpg" alt="" srcset=""
@@ -301,10 +313,9 @@
         </div>
     </section>
 
-    <div style="background-color: #FFFFFF;height: 20px;margin-bottom: 2px;"></div>
+    <div class="d-none-mobile" style="background-color: #FFFFFF;height: 20px;margin-bottom: 2px;"></div>
 
-    <div style="width: 100%; background-color: #000000;">
-
+    <div class="d-none-mobile" style="width: 100%; background-color: #000000;">
         <div class="content-wrapper" style="padding-top: 4rem; padding-bottom: 0rem;">
             <table class="text-white">
                 <tr style="vertical-align: top;">
@@ -370,7 +381,6 @@
                 </tr>
             </table>
         </div>
-        
         <div>
             <div class="content-wrapper">
                 <a href="#bigHeader">
