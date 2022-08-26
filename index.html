@@ -18,7 +18,9 @@
 </head>
 
 <body>
-    <nav style="z-index: 99; background-color: #FFFFFF;" class="d-none-mobile">
+
+    <!-- NAVBAR_DESKTOP -->
+    <nav style="z-index: 99; background-color: #FFFFFF;" class="d-none-mobile d-none-ipad">
         <div class="content-wrapper">
             <div style="display: flex; flex-direction: row; justify-content: space-between;">
                 <div style="padding-top: 2rem;padding-bottom: 2rem; margin-left: 0px; width: 243px; border-right: 1px solid #000000; text-align: left;">
@@ -44,23 +46,27 @@
         <hr style="width: 100%; margin: 0; padding: 0; height: 1px; background-color: #000000; margin-top: -1px;">
     </nav>
 
-    <nav style="z-index: 99; width: 100vw;" class="d-none-desktop">
+    <!-- NAVBAR_MOBILE -->
+    <nav style="z-index: 99; width: 100vw;" class="d-none-desktop d-none-ipad">
         <table style="width: 100%">
             <tr style=" border-bottom: 1px solid #000000;">
                 <td style="width: 67px; text-align: center; border-right: 1px solid #000000;">
                     <img src="assets/img/hamburger-icon.svg" alt="" srcset="">
                 </td>
                 <td style="text-align: center; padding: 20px 0; padding-top: 30px;">
-                    <a href="index.html">
-                        <img src="assets/img/chttnlogo-black.svg" alt="" srcset="" style="width: 30vw;">
+                    <a href="index.html" style="margin-left: -50px;">
+                        <img src="assets/img/chttnlogo-black.svg" alt="" srcset="" style="width: 72px;">
                     </a>
                 </td>
             </tr>
         </table>
     </nav>
 
+    <!-- SPASI_DESKTOP -->
     <div style="background-color: #FFFFFF;height: 158px;margin-bottom: 2px;" class="d-none-mobile"></div>
-    <div style="background-color: #FFFFFF;height: 130px;margin-bottom: 2px;" class="d-none-desktop"></div>
+
+    <!-- SPASI_MOBILE -->
+    <div style="background-color: #FFFFFF;height: 170px;margin-bottom: 2px;" class="d-none-desktop"></div>
 
     <div style="width: 100%; height: 640px;" class="d-none-mobile">
         <div class="content-wrapper" style="position:relative;">
@@ -205,6 +211,7 @@
         </div>
     </div>
 
+    <!-- BIG_BANNER_MOBILE -->
     <div class="d-none-desktop">
         <div class="content-wrapper" style="width: 100%; margin: auto; margin-bottom: 20px;">
             <div style="width: 100%; text-align: center;">
@@ -267,6 +274,7 @@
         </table>
     </div>
 
+    <!-- BIG_BANNER_DESKTOP -->
     <div id="about" style="background: #000000; padding-top: 6rem; padding-bottom: 4rem;" class="about d-none-mobile">
         <div class="content-wrapper">
             <table

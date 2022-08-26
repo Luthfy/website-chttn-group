@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 720px) {
     /* Untuk Menghilangkan Di Mobile */
     .d-none-mobile {
         display: none;
