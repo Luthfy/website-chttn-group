@@ -1,4 +1,6 @@
-@media only screen and (max-width: 720px) {
+
+
+@media only screen and (max-width: 600px) {
     /* Untuk Menghilangkan Di Mobile */
     .d-none-mobile {
         display: none;
@@ -24,10 +26,11 @@
     }
 }
 
-.content-wrapper {
+
+/* .content-wrapper {
     width: 1300px;
     margin: auto;
-}
+} */
 
 nav {
     background-color: #FFFFFF;
