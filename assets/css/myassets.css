@@ -1,9 +1,16 @@
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 250px) and (max-width: 600px) {
     /* Untuk Menghilangkan Di Mobile */
     .d-none-mobile {
-        display: none;
+        display: none !important;
+    }
+
+    nav {
+        width: 100vw !important;
+        z-index: 99;
+        position: relative !important;
+        background-color: #FFFFFF;
     }
 
     .content-wrapper {
@@ -12,30 +19,41 @@
     }
 }
 
-@media screen and (min-width: 1300px) {
-    /* Untuk Menghilangkan Di Desktop */
-    .d-none-desktop {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px)
+    and (max-width: 1300px) {
     /* Untuk Menghilangkan Di Tab */
     .d-none-ipad {
-        display: none;
+        display: none !important;
+    }
+
+    .content-wrapper {
+        width: 96% !important;
+    }
+
+}
+
+@media only screen and (min-width: 1300px) {
+    .d-none-desktop {
+        display: none !important;
     }
 }
 
+.footer {
+    background: #000; 
+    width: 100%;
+} 
 
-/* .content-wrapper {
+
+.content-wrapper {
     width: 1300px;
     margin: auto;
-} */
+}
 
 nav {
     background-color: #FFFFFF;
     position: fixed;
     width: 100%;
+    z-index: 99;
     top: 0;
 }
 
