@@ -15,9 +15,10 @@
     }
 
     .content-wrapper {
-        width: 320px;
+        width: 320px !important;
         margin: auto;
     }
+
 }
 
 @media screen and (min-width: 600px)
