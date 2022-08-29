@@ -40,6 +40,79 @@
     }
 }
 
+.opening-fadeout {
+    animation-iteration-count: 0;
+
+    animation: fadeOut 10s;
+    -webkit-animation: fadeOut 10s;
+    -moz-animation: fadeOut 10s;
+    -o-animation: fadeOut 10s;
+    -ms-animation: fadeOut 10s;
+
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: no;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: no;
+    }
+}
+
+@-moz-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: no;
+    }
+}
+@-o-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: no;
+    }
+}
+
+@-ms-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: no;
+    }
+}
+
 .carousel {
     background: #EEE;
   }
