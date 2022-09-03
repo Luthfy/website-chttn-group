@@ -5,16 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHATATAN GROUP| CHATATAN GROUP</title>
+    <title>CHATATAN GROUP| WE SERVE BETTER</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@400;600;700&family=Almarai:wght@300&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="assets/css/myassets.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <!-- <link rel="stylesheet" href="../assets/css/myassets.css"> -->
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+
 </head>
 
 <body>
@@ -22,24 +26,24 @@
     <!-- NAVBAR_DESKTOP -->
     <nav class="d-none-mobile d-none-ipad">
         <div class="content-wrapper">
-            <div style="display: flex; flex-direction: row; justify-content: space-between;">
-                <div style="padding-top: 2rem;padding-bottom: 2rem; margin-left: 0px; width: 243px; border-right: 1px solid #000000; text-align: left;">
-                    <img src="assets/img/logo-nav-left.svg" alt="" srcset="">
+            <div class="d-flex flex-row justify-content-between">
+                <div class="nav-left" style="padding-top: 2rem;padding-bottom: 2rem; margin-left: 0px; width: 243px; border-right: 1px solid #000000; text-align: left;">
+                    <img src="../assets/img/logo-nav-left.svg" alt="" srcset="">
                     <div style="margin-bottom: 1rem;"></div>
-                    <a href="#" class="border-rounded" style="height: 30px; display: inline-block;padding-top: 3px;">
+                    <a href="#about" class="border-rounded">
                         <div class="d-flex justify-content-between ">
                             <span style="font-size: 9px; font-weight: 1000; letter-spacing: 2%; color: #000000; margin-right: 3rem;" class="almarai-normal">LEARN MORE</span>
-                            <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" width="8px" height="9px" />
+                            <img src="../assets/img/right-arrow-sm.svg" alt="" srcset="" width="8px" height="9px" style="margin-top: 2px;"/>
                         </div>
                     </a>
                 </div>
                 <div style="padding-top: 3rem; margin-left: 20px; width: 814px; text-align: center;" class="nav-left">
                     <a href="index.html">
-                        <img src="assets/img/chttnlogo-black.svg" alt="" srcset="">
+                        <img src="../assets/img/chttnlogo-black.svg" alt="" srcset="">
                     </a>
                 </div>
-                <div style="padding-top: 4.5rem; margin-left: 20px; width: 243px; text-align: right;" class="nav-left">
-                    <img src="assets/img/hamburger-icon.svg" alt="" srcset="">
+                <div class="hamburger-icon" style="text-align: right;">
+                    <img src="../assets/img/hamburger-icon.svg" alt="" srcset="" onmouseover="showMenu()" onclick="showMenu()">
                 </div>  
             </div>
         </div>
@@ -51,16 +55,69 @@
         <table style="width: 100%">
             <tr style=" border-bottom: 1px solid #000000;">
                 <td style="width: 67px; text-align: center; border-right: 1px solid #000000;">
-                    <img src="assets/img/hamburger-icon.svg" alt="" srcset="">
+                    <img src="../assets/img/hamburger-icon.svg" alt="" srcset="" onclick="showMenu()">
                 </td>
                 <td style="text-align: center; padding: 20px 0; padding-top: 30px;">
                     <a href="index.html" style="margin-left: -50px;">
-                        <img src="assets/img/chttnlogo-black.svg" alt="" srcset="" style="width: 72px;">
+                        <img src="../assets/img/chttnlogo-black.svg" alt="" srcset="" style="width: 72px;">
                     </a>
                 </td>
             </tr>
         </table>
     </nav>
+    <!-- END_NAVBAR_MOBILE -->
+
+    <section id="menu" class="menu" style="background-color: #000;">
+        <div class="menu-item">
+            <span class="aksar-normal menu-item-title">BRAND UNDER CHATATAN GROUP</span>
+        </div>
+        <hr>
+        <div class="menu-item">
+            <a href="">
+                CHAT BARBER
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="">
+                CHAT SHOE TREATMENT
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="">
+                RUPAKA
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="">
+                CHATBOX
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="">
+                CHTTN BASIC
+            </a>
+        </div>
+        <hr>
+        <div class="menu-item">
+            <a href="">
+                <span class="aksar-normal menu-item-title">ABOUT US</span>
+            </a>
+        </div>
+        <hr>
+        <div class="menu-item">
+            <a href="https://play.google.com/store/search?q=chatatan+group&c=apps">
+                <span class="aksar-normal menu-item-title">DOWNLOAD OUR APP TO GET POINTS</span>
+            </a>
+        </div>
+        <hr>
+        <div class="menu-item">
+            <a href="">
+                <span class="aksar-normal menu-item-title">CONTACT US</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ENDHEADER -->
 
     <!-- SPASI_DESKTOP -->
     <div style="background-color: #FFFFFF;height: 158px;margin-bottom: 2px;" class="d-none-mobile d-none-ipad"></div>
@@ -85,8 +142,8 @@
                     WE CREATED & OWN ALL OF THEM.
                 </span>
                 <div style="height: 10px;"></div>
-                <div class="rounded">
-                    <a href="#" class="border-rounded" style="display: inline-block;">
+                <div>
+                    <a href="#" class="border-rounded">
                         <div class="d-flex justify-content-between">
                             <span class="almarai-normal" style="font-size: 12px; color: #000000; margin-right: 4rem; letter-spacing: 0.002rem;">VISIT OUR STORE</span>
                             <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" />
@@ -96,8 +153,8 @@
             </div>
 
             <div style="position: relative; top: 400px;">
-                <div class="rounded" style="display: inline-block;">
-                    <a href="#" class="border-rounded" style="display: inline-block;">
+                <div style="display: inline-block;">
+                    <a href="http://wa.me/6287830080800" class="border-rounded">
                         <div class="d-flex justify-content-between">
                             <span class="almarai-normal" style="font-size: 12px; color: #000000; margin-right: 4rem; letter-spacing: 0.002rem;">CONTACT US</span>
                             <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" style="transform: rotate(-45deg);"/>
@@ -115,8 +172,8 @@
                     BECOME THE MEMBER NOW!
                 </span>
                 <div style="height: 10px;"></div>
-                <div class="rounded">
-                    <a href="#" class="border-rounded" style="display: inline-block;">
+                <div>
+                    <a href="https://play.google.com/store/search?q=chatatan+group&c=apps" class="border-rounded">
                         <div class="d-flex justify-content-between">
                             <span class="almarai-normal" style="font-size: 12px; color: #000000; margin-right: 4rem; letter-spacing: 0.002rem;">DOWNLOAD APP</span>
                             <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" />
@@ -132,81 +189,69 @@
             </div>
 
             <!-- CHATBARBER -->
-            <div class="d-none-ipad" style="display: inline-block; position: relative; bottom: 76px; left: 375px;">
-                <div class="rounded">
-                    <a href="#" class="border-rounded" style="display: inline-block; padding: 8px 25px; background-color: #000000;">
-                        <div class="text-center">
-                            <span class="almarai-normal" style="font-size: 12px; color: #FFFFFF; letter-spacing: 0.002rem;">CHAT BARBER</span>
-                        </div>
-                    </a>
-                    <p class="almarai-normal text-center" style="font-size: 10px; margin-top: 8px;">BARBER SHOP</p>
-                </div>
+            <div class="d-none-ipad" style="display: inline-block; position: relative; bottom: 50px; left: 375px;">
+                <a href="#" class="rounded">
+                    <div class="text-center">
+                        <span class="almarai-normal" style="font-size: 12px; color: #FFFFFF; letter-spacing: 0.002rem;">CHAT BARBER</span>
+                    </div>
+                </a>
+                <p class="almarai-normal text-center" style="font-size: 10px; margin-top: 8px;">BARBER SHOP</p>
             </div>
 
             <!-- KOSTUNGUFLAMBOYAN -->
-            <div class="d-none-ipad" style="display: inline-block; position: relative; top: 70px; left: 110px;">
-                <div class="rounded">
-                    <a href="#" class="border-rounded" style="display: inline-block; width: 200px; background-color: #000000; border-radius: 35px;">
-                        <div class="text-center">
-                            <span class="almarai-normal" style="font-size: 12px; color: #FFFFFF; letter-spacing: 0.002rem;">KOS UNGU FLAMBOYAN</span>
-                        </div>
-                    </a>
-                </div>
+            <div class="d-none-ipad" style="display: inline-block; position: relative; top: 80px; left: 120px;">
+                <a href="#" class="rounded">
+                    <div class="text-center">
+                        <span class="almarai-normal" style="font-size: 12px; color: #FFFFFF; letter-spacing: 0.002rem;">KOS UNGU FLAMBOYAN</span>
+                    </div>
+                </a>
                 <p class="almarai-normal text-center" style="font-size: 10px; margin-top: 8px;">HOUSE RENT</p>
             </div>
 
             <!-- CEMPAKAGUESTHOUSE -->
-            <div class="d-none-ipad" style="display: inline-block; position: relative; top: 190px; right: 140px;">
-                <div class="rounded">
-                    <a href="#" class="border-rounded" style="display: inline-block; width: 200px; background-color: #000000; border-radius: 35px;">
-                        <div class="text-center">
-                            <span class="almarai-normal" style="font-size: 12px; color: #FFFFFF; letter-spacing: 0.002rem;">CEMPAKA GUEST HOUSE</span>
-                        </div>
-                    </a>
-                </div>
+            <div class="d-none-ipad" style="display: inline-block; position: relative; top: 200px; right: 120px;">
+                <a href="#" class="rounded">
+                    <div class="text-center">
+                        <span class="almarai-normal" style="font-size: 12px; color: #FFFFFF; letter-spacing: 0.002rem;">CEMPAKA GUEST HOUSE</span>
+                    </div>
+                </a>
                 <p class="almarai-normal text-center" style="font-size: 10px; margin-top: 8px;">GUEST HOUSE</p>
             </div>
 
             <!-- RUPAKA -->
-            <div class="d-none-ipad" style="display: inline-block; position: relative; top: 305px; right: 255px;">
-                <div class="rounded">
-                    <a href="#" class="border-rounded" style="display: inline-block; width: 130px; background-color: #000000; border-radius: 35px;">
-                        <div class="text-center">
-                            <span class="almarai-normal" style="font-size: 12px; color: #FFFFFF; letter-spacing: 0.002rem;">RUPAKA</span>
-                        </div>
-                    </a>
-                </div>
+            <div class="d-none-ipad" style="display: inline-block; position: relative; top: 325px; right: 190px;">
+                <a href="#" class="rounded">
+                    <div class="text-center">
+                        <span class="almarai-normal" style="font-size: 12px; color: #FFFFFF; letter-spacing: 0.002rem;">RUPAKA</span>
+                    </div>
+                </a>
                 <p class="almarai-normal text-center" style="font-size: 10px; margin-top: 8px;">GUEST HOUSE</p>
             </div>
 
             <!-- CHATBOX -->
-            <div class="d-none-ipad" style="display: inline-block; position: relative; bottom: 10px; left: 230px;">
-                <div class="rounded">
-                    <a href="#" class="border-rounded" style="display: inline-block; width: 130px; background-color: #000000; border-radius: 35px;">
-                        <div class="text-center">
-                            <span class="almarai-normal" style="font-size: 12px; color: #FFFFFF; letter-spacing: 0.002rem;">CHATBOX</span>
-                        </div>
-                    </a>
-                </div>
+            <div class="d-none-ipad" style="display: inline-block; position: relative; top: 10px; left: 260px;">
+                <a href="#" class="rounded">
+                    <div class="text-center">
+                        <span class="almarai-normal" style="font-size: 12px; color: #FFFFFF; letter-spacing: 0.002rem;">CHATBOX</span>
+                    </div>
+                </a>
                 <p class="almarai-normal text-center" style="font-size: 10px; margin-top: 8px;">COFFEE SHOP</p>
             </div>
 
              <!-- CHTTNBASIC -->
-             <div class="d-none-ipad" style="display: inline-block; position: relative; top: 120px; right: 0px;">
-                <div class="rounded">
-                    <a href="#" class="border-rounded" style="display: inline-block; width: 130px; background-color: #000000; border-radius: 35px;">
-                        <div class="text-center">
-                            <span class="almarai-normal" style="font-size: 12px; color: #FFFFFF; letter-spacing: 0.002rem;">CHTTN BASIC</span>
-                        </div>
-                    </a>
-                </div>
+             <div class="d-none-ipad" style="display: inline-block; position: relative; top: 140px; left: 80px;">
+                <a href="#" class="rounded">
+                    <div class="text-center">
+                        <span class="almarai-normal" style="font-size: 12px; color: #FFFFFF; letter-spacing: 0.002rem;">CHTTN BASIC</span>
+                    </div>
+                </a>
                 <p class="almarai-normal text-center" style="font-size: 10px; margin-top: 8px;">DAILY WEAR</p>
             </div>
 
             <!-- CHATSHOETREATMENT -->
-            <div class="d-none-ipad" style="display: inline-block; position: relative; top: 220px; right: 40px; float: right;">
-                <div class="rounded">
-                    <a href="#" class="border-rounded" style="display: inline-block; width: 200px; background-color: #000000; border-radius: 35px;">
+            <div class="d-none-ipad" style="display: inline-block; position: relative; top: 310px; right: 40px; float: right;">
+                <div class="">
+                    <a href="#" class="rounded">
                         <div class="text-center">
                             <span class="almarai-normal" style="font-size: 12px; color: #FFFFFF; letter-spacing: 0.002rem;">CHAT SHOE TREATMENT</span>
                         </div>
@@ -231,11 +276,11 @@
                     WE CREATED & OWN ALL OF THEM.
                 </span>
                 <div style="height: 10px;"></div>
-                <div class="rounded">
-                    <a href="#" class="border-rounded" style="display: inline-block; padding: 6px 10px;">
+                <div class="">
+                    <a href="#" class="rounded" style="display: inline-block; padding: 6px 10px; background-color: #FFFFFF; border: 1px solid #000000">
+                        <span class="almarai-normal" style="font-size: 10px; color: #000000; margin-right: 6rem; letter-spacing: 0.002rem; margin-top: 0px;">VISIT OUR STORE</span>
+                        <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" />
                         <div>
-                            <span class="almarai-normal" style="font-size: 10px; color: #000000; margin-right: 6rem; letter-spacing: 0.002rem; margin-top: -100px;">VISIT OUR STORE</span>
-                            <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" />
                         </div>
                     </a>
                 </div>
@@ -243,7 +288,7 @@
 
             <div style="position: relative; top: 280px;">
                 <div class="rounded" style="display: inline-block;">
-                    <a href="#" class="border-rounded" style="display: inline-block; padding: 6px 10px;">
+                    <a href="http://wa.me/6287830080800" class="border-rounded" style="display: inline-block; padding: 6px 10px;">
                         <div class="d-flex justify-content-between">
                             <span class="almarai-normal" style="font-size: 10px; color: #000000; margin-right: 4rem; letter-spacing: 0.002rem;">CONTACT US</span>
                             <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" style="transform: rotate(-45deg);"/>
@@ -262,7 +307,7 @@
                 </span>
                 <div style="height: 10px;"></div>
                 <div class="rounded">
-                    <a href="#" class="border-rounded" style="display: inline-block; padding: 6px 10px;">
+                    <a href="https://play.google.com/store/search?q=chatatan+group&c=apps" class="border-rounded" style="display: inline-block; padding: 6px 10px;">
                         <div class="d-flex justify-content-between">
                             <span class="almarai-normal" style="font-size: 10px; color: #000000; margin-right: 4rem; letter-spacing: 0.002rem;">DOWNLOAD APP</span>
                             <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" />
@@ -335,7 +380,7 @@
                         </span>
                         <div style="height: 10px;"></div>
                         <div class="rounded">
-                            <a href="#" class="border-rounded" style="display: inline-block; padding: 6px 10px;">
+                            <a href="https://play.google.com/store/search?q=chatatan+group&c=apps" class="border-rounded" style="display: inline-block; padding: 6px 10px;">
                                 <div class="d-flex justify-content-between" style="margin-top: -3px;">
                                     <span class="almarai-normal" style="font-size: 9px; color: #000000; margin-right: 10px; letter-spacing: 0.002rem;">DOWNLOAD APP</span>
                                     <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" />
@@ -383,26 +428,21 @@
                         </p>
                     </td>
                     <td rowspan="2" style="border-left: 1px solid #FFFFFF; width:394px;">
-                        <img src="assets/img/barberman.jpg" alt="" srcset="" width="394px" style="margin: 3rem 3rem;">
+                        <img src="assets/img/main.jpg" alt="" srcset="" width="394px" style="margin: 3rem 3rem;">
                         <div style="margin: 0rem 3rem 3rem 3rem;">
-                            <div class="rounded">
-                                <a href="#" class="border-rounded-white" style="display: inline-block;width: 100% !important;">
-                                    <div style="display: flex; justify-content: space-between;">
-                                        <span class="almarai-normal" style="font-size: 12px; color: #FFFFFF; letter-spacing: 0.002rem;">VISIT OUR STORE</span>
-                                        <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" style="filter: invert(1);" />
-                                    </div>
-                                </a>
-                            </div>
+                            <a href="https://linktr.ee/chatatangroupstores" class="rounded" style="background-color: #FFFFFF; width: 100%;">
+                                <div class="d-flex justify-content-between">
+                                    <span class="almarai-normal" style="font-size: 12px; color: #000000; letter-spacing: 0.002rem;">VISIT OUR STORE</span>
+                                    <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" />
+                                </div>
+                            </a>
                             <div style="height: 20px;"></div>
-                           
-                            <div class="rounded">
-                                <a href="#" class="border-rounded-white" style="display: inline-block;width: 100% !important;">
-                                    <div style="display: flex; justify-content: space-between;">
-                                        <span class="almarai-normal" style="font-size: 12px; color: #FFFFFF; letter-spacing: 0.002rem;">DOWNLOAD OUR MEMBER APP</span>
-                                        <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" style="filter: invert(1);" />
-                                    </div>
-                                </a>
-                            </div>
+                            <a href="https://play.google.com/store/search?q=chatatan+group&c=apps" class="rounded" style="background-color: #FFFFFF; width: 100%;">
+                                <div class="d-flex justify-content-between">
+                                    <span class="almarai-normal" style="font-size: 12px; color: #000000; letter-spacing: 0.002rem;">DOWNLOAD OUR MEMBER APP</span>
+                                    <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" />
+                                </div>
+                            </a>
                         </div>
                     </td>
                 </tr>
@@ -436,14 +476,12 @@
                         </p>
                     </td>
                     <td style="width: 20%;" class="text-center" style="height: 16rem;">
-                        <div class="rounded">
-                            <a href="#" class="border-rounded-white" style="display: inline-block;">
-                                <div class="d-flex justify-content-between">
-                                    <span class="almarai-normal" style="font-size: 12px; color: #FFFFFF; margin-right: 6rem; letter-spacing: 0.002rem;">LEARN MORE</span>
-                                    <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" style="transform: rotate(-45deg); filter:invert(1);" />
-                                </div>
-                            </a>
-                        </div>
+                        <a href="#" class="rounded" style="background-color: #FFFFFF;">
+                            <div class="d-flex justify-content-between">
+                                <span class="almarai-normal" style="font-size: 12px; color: #000000; margin-right: 6rem; letter-spacing: 0.002rem;">LEARN MORE</span>
+                                <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" style="transform: rotate(-45deg);" />
+                            </div>
+                        </a>
                     </td>
                 </tr>
                 <tr style="border-bottom: 1px solid #FFFFFF;">
@@ -460,14 +498,12 @@
                         </p>
                     </td>
                     <td style="width: 20%;" class="text-center" style="height: 16rem;">
-                        <div class="rounded">
-                            <a href="#" class="border-rounded-white" style="display: inline-block;">
-                                <div class="d-flex justify-content-between">
-                                    <span class="almarai-normal" style="font-size: 12px; color: #FFFFFF; margin-right: 6rem; letter-spacing: 0.002rem;">LEARN MORE</span>
-                                    <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" style="transform: rotate(-45deg); filter:invert(1);" />
-                                </div>
-                            </a>
-                        </div>
+                        <a href="#" class="rounded" style="background-color: #FFFFFF;">
+                            <div class="d-flex justify-content-between">
+                                <span class="almarai-normal" style="font-size: 12px; color: #000000; margin-right: 6rem; letter-spacing: 0.002rem;">LEARN MORE</span>
+                                <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" style="transform: rotate(-45deg);" />
+                            </div>
+                        </a>
                     </td>
                 </tr>
                 
@@ -485,14 +521,12 @@
                         </p>
                     </td>
                     <td style="width: 20%;" class="text-center" style="height: 16rem;">
-                        <div class="rounded">
-                            <a href="#" class="border-rounded-white" style="display: inline-block;">
-                                <div class="d-flex justify-content-between">
-                                    <span class="almarai-normal" style="font-size: 12px; color: #FFFFFF; margin-right: 6rem; letter-spacing: 0.002rem;">LEARN MORE</span>
-                                    <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" style="transform: rotate(-45deg); filter:invert(1);" />
-                                </div>
-                            </a>
-                        </div>
+                        <a href="#" class="rounded" style="background-color: #FFFFFF;">
+                            <div class="d-flex justify-content-between">
+                                <span class="almarai-normal" style="font-size: 12px; color: #000000; margin-right: 6rem; letter-spacing: 0.002rem;">LEARN MORE</span>
+                                <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" style="transform: rotate(-45deg);" />
+                            </div>
+                        </a>
                     </td>
                 </tr>
                 <tr style="border-bottom: 1px solid #FFFFFF;">
@@ -510,14 +544,12 @@
                         </p>
                     </td>
                     <td style="width: 20%;" class="text-center" style="height: 16rem;">
-                        <div class="rounded">
-                            <a href="#" class="border-rounded-white" style="display: inline-block;">
-                                <div class="d-flex justify-content-between">
-                                    <span class="almarai-normal" style="font-size: 12px; color: #FFFFFF; margin-right: 6rem; letter-spacing: 0.002rem;">LEARN MORE</span>
-                                    <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" style="transform: rotate(-45deg); filter:invert(1);" />
-                                </div>
-                            </a>
-                        </div>
+                        <a href="#" class="rounded" style="background-color: #FFFFFF;">
+                            <div class="d-flex justify-content-between">
+                                <span class="almarai-normal" style="font-size: 12px; color: #000000; margin-right: 6rem; letter-spacing: 0.002rem;">LEARN MORE</span>
+                                <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" style="transform: rotate(-45deg);" />
+                            </div>
+                        </a>
                     </td>
                 </tr>
                 <tr style="border-bottom: 1px solid #FFFFFF;">
@@ -533,14 +565,12 @@
                         </p>
                     </td>
                     <td style="width: 20%;" class="text-center" style="height: 16rem;">
-                        <div class="rounded">
-                            <a href="#" class="border-rounded-white" style="display: inline-block;">
-                                <div class="d-flex justify-content-between">
-                                    <span class="almarai-normal" style="font-size: 12px; color: #FFFFFF; margin-right: 6rem; letter-spacing: 0.002rem;">LEARN MORE</span>
-                                    <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" style="transform: rotate(-45deg); filter:invert(1);" />
-                                </div>
-                            </a>
-                        </div>
+                        <a href="#" class="rounded" style="background-color: #FFFFFF;">
+                            <div class="d-flex justify-content-between">
+                                <span class="almarai-normal" style="font-size: 12px; color: #000000; margin-right: 6rem; letter-spacing: 0.002rem;">LEARN MORE</span>
+                                <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" style="transform: rotate(-45deg);" />
+                            </div>
+                        </a>
                     </td>
                 </tr>
             </table> 
@@ -723,14 +753,14 @@
                 OR MAYBE JUST A FRIENDSHIP. <br> WE WOULD LOVE THAT!
             </h2>
             <div style="height: 10px;"></div>
-            <div class="rounded">
-                <a href="#" class="border-rounded" style="display: inline-block; padding: 8px 12px; padding-top: 4px;">
-                    <div class="d-flex justify-content-between">
-                        <span class="almarai-normal" style="font-size: 10px; color: #000000; margin-right: 45px; letter-spacing: 0.002rem;">CONTACT US VIA WHATSAPP</span>
-                        <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" />
-                    </div>
-                </a>
-            </div>
+            
+            <a href="http://wa.me/6287830080800" class="rounded" style="background-color: #FFFFFF; border: 1px solid #000000;">
+                <div class="d-flex justify-content-between">
+                    <span class="almarai-normal" style="font-size: 10px; color: #000000; margin-right: 45px; letter-spacing: 0.002rem;">CONTACT US VIA WHATSAPP</span>
+                    <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" />
+                </div>
+            </a>
+        
             <div style="height: 20px;"></div>
             <img src="assets/img/index_galeri/hand_ilustrasi.svg" alt="" style="height: 380px;" class="d-none-mobile d-none-ipad">
             <img src="assets/img/index_galeri/hand_ilustrasi.svg" alt="" style="width: 200px;" class="d-none-desktop">
@@ -782,19 +812,19 @@
                             GET POINTS AND REDEEM IT. <br />BECOME THE MEMBER NOW!
                         </h4>
                         <div style="margin-bottom: 20px;"></div>
-                        <div class="rounded">
-                            <a href="#" class="border-rounded-white" style="display: inline-block;">
-                                <div class="d-flex justify-content-between">
-                                    <span class="almarai-normal" style="font-size: 12px; color: #FFF; margin-right: 4.4rem; letter-spacing: 0.002rem;">DOWNLOAD APP</span>
-                                    <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" style="filter: invert(1);" />
-                                </div>
-                            </a>
-                        </div>
+                        
+                        <a href="https://play.google.com/store/search?q=chatatan+group&c=apps" class="rounded" style="background-color: #FFFFFF;">
+                            <div class="d-flex justify-content-between">
+                                <span class="almarai-normal" style="font-size: 12px; color: #000000; margin-right: 4.4rem; letter-spacing: 0.002rem;">DOWNLOAD APP</span>
+                                <img src="../assets/img/right-arrow-sm.svg" alt="" srcset="" />
+                            </div>
+                        </a>
+                        
                     </td>
                     <td style="width: 5%;">
                         <div style="display: flex; flex-direction: column;">
                             <div class="text-center">
-                                <img src="assets/img/chatatanlogo.svg" alt="" style="width: 119px; margin-top: 15px;">
+                                <img src="../assets/img/chatatanlogo.svg" alt="" style="width: 119px; margin-top: 15px;">
                             </div>
                             <div style="margin-bottom: 1.4rem;"></div>
                             <div class="text-center">
@@ -802,9 +832,11 @@
                             </div>
                             <div style="margin-bottom: 1.4rem;"></div>
                             <div class="text-center">
-                                <img src="assets/img/instagram.svg" alt="" style="margin: 0.5rem; height: 30px;">
+                                <a href="https://linktr.ee/chatatangroupstores" target="_blank">
+                                    <img src="../assets/img/instagram.svg" alt="" style="margin: 0.5rem; height: 30px;">
+                                </a>
                                 <a href="https://youtube.com/channel/UC6ral22t0ifuuSyXCFCbq3w" target="_blank">
-                                    <img src="assets/img/youtube.svg" alt="" style="filter: invert(1); height: 30px ;">
+                                    <img src="../assets/img/youtube.svg" alt="" style="filter: invert(1); height: 30px ;">
                                 </a>
                             </div>
                         </div>
@@ -816,7 +848,7 @@
         <div>
             <div class="content-wrapper" style="margin-bottom: 0px">
                 <a href="#bigHeader">
-                    <img src="assets/img/arrow-top-circle-white.svg" alt="" srcset="" style="position: relative; left: 5%; top: 40px; width: 43px; height: 43px;">
+                    <img src="../assets/img/arrow-top-circle-white.svg" alt="" srcset="" style="position: relative; left: 5%; top: 40px; width: 43px; height: 43px;">
                 </a>
             </div>
             <hr style="width: 100%; height:1px; background-color: #FFFFFF;">
@@ -837,16 +869,18 @@
     <div class="footer d-none-desktop d-none-ipad">
         <div style="padding: 20px; padding-top: 40px;">
             <div style="display: inline;">
-                <img src="assets/img/chatatanlogo.svg" alt="" style="width: 100px;">
+                <img src="../assets/img/chatatanlogo.svg" alt="" style="width: 100px;">
             </div>
             <div style="float: right; margin-top: -14px;">
                 <span class="aksar-normal" style="font-size: 14px; text-align: center; line-height: 50px; color: #FFFFFF;">
                     FOLLOW US
                 </span>
                 <div style="text-align: center; width: 60px; margin-top: -8px;">
-                    <img src="assets/img/instagram.svg" alt="" style="margin-right: 5px;">
+                    <a href="https://linktr.ee/chatatangroupstores" target="_blank">
+                        <img src="../assets/img/instagram.svg" alt="" style="margin-right: 5px;">
+                    </a>
                     <a href="https://youtube.com/channel/UC6ral22t0ifuuSyXCFCbq3w" target="_blank">
-                        <img src="assets/img/youtube.svg" alt="" style="filter: invert(1); height: 24px;">
+                        <img src="../assets/img/youtube.svg" alt="" style="filter: invert(1); height: 24px;">
                     </a>
                 </div>
             </div>
@@ -932,17 +966,19 @@
         </div>
         <div style="display: flex; flex-direction: row;">
             <div style="flex: 1; color: #FFFFFF; padding-bottom: 20px; padding-top: 30px; padding-left: 30px; padding-right: 30px;">
-                <img src="assets/img/chatatanlogo.svg" alt="" style="width: 100px;">
+                <img src="../assets/img/chatatanlogo.svg" alt="" style="width: 100px;">
             </div>
             <div style="flex: 1; color: #FFFFFF; padding: 20px;">
                 <span class="aksar-normal" style="font-size: 14px; text-align: center; line-height: 50px; color: #FFFFFF;">
                     FOLLOW US
                 </span>
                 <div style="text-align: center; width: 60px; margin-top: -8px;">
-                    <img src="assets/img/instagram.svg" alt="">
+                    <a href="https://linktr.ee/chatatangroupstores" target="_blank">
+                        <img src="../assets/img/instagram.svg" alt="">
+                    </a>
                     <div style="margin: 2px 0; display: inline;"></div>
                     <a href="https://youtube.com/channel/UC6ral22t0ifuuSyXCFCbq3w" target="_blank">
-                        <img src="assets/img/youtube.svg" alt="" style="height: 24px; filter: invert(1);">
+                        <img src="../assets/img/youtube.svg" alt="" style="height: 24px; filter: invert(1);">
                     </a>
                 </div>
             </div>
@@ -951,10 +987,10 @@
                     GET POINTS AND REDEEM IT. <br />BECOME THE MEMBER NOW!
                 </h4>
                 <div class="rounded">
-                    <a href="#" class="border-rounded-white" style="display: inline-block; padding: 6px 10px;">
+                    <a href="https://play.google.com/store/search?q=chatatan+group&c=apps" class="border-rounded-white" style="display: inline-block; padding: 6px 10px;">
                         <div class="d-flex justify-content-between">
                             <span class="almarai-normal" style="font-size: 10px; color: #FFF; margin-right: 4.4rem; letter-spacing: 0.002rem;">DOWNLOAD APP</span>
-                            <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" style="filter: invert(1);" />
+                            <img src="../assets/img/right-arrow-sm.svg" alt="" srcset="" style="filter: invert(1);" />
                         </div>
                     </a>
                 </div>
@@ -968,6 +1004,44 @@
         </div>
     </div>
 
-</body>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script>
+
+        function showMenu(off = null)
+        {
+            let menu = document.getElementById("menu").style.display;
+
+            if (off == 0) {
+                document.getElementById("menu").style.display = "none";
+            } else if (off == 1) {
+                document.getElementById("menu").style.display = "block";
+            } else {
+                if (menu == "block") {
+                    document.getElementById("menu").style.display = "none";
+                } else {
+                    document.getElementById("menu").style.display = "block";
+                }
+            }
+            
+        }
+
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+            loop: true,
+        });
+    </script>
+
+    </body>
 
 </html>

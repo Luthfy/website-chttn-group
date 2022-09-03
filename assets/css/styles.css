@@ -1,0 +1,201 @@
+@media only screen and (min-width: 250px) and (max-width: 600px) {
+    /* Untuk Menghilangkan Di Mobile */
+    .d-none-mobile {
+        display: none !important;
+    }
+
+    .content-wrapper {
+        width: 100vw !important;
+        margin: auto;
+    }
+
+    .image-slides-item {
+        margin: 1rem;
+        padding-right: 30px;
+        width: 98vw;
+        height: auto;
+    }
+
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        background: #fff;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+    }
+}
+
+@media screen and (min-width: 600px)
+    and (max-width: 1300px) {
+    /* Untuk Menghilangkan Di Tab */
+    .d-none-ipad {
+        display: none !important;
+    }
+
+    .content-wrapper {
+        width: 96% !important;
+    }
+
+}
+
+@media only screen and (min-width: 1300px) {
+    .d-none-desktop {
+        display: none !important;
+    }
+
+    .menu {
+        padding-top: 110px !important;
+    }
+}
+
+nav {
+    width: 100vw !important;
+    z-index: 99;
+    position: fixed !important;
+    background-color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+nav .nav-left a {
+    text-decoration: none;
+}
+
+.footer {
+    background: #000; 
+    width: 100%;
+    font-size: 10px !important;
+    color: #FFFFFF;
+}
+
+.hamburger-icon {
+    padding-top: 4.5rem; 
+    margin-left: 20px; 
+    width: 243px;
+    cursor: pointer;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    color: #FFFFFF;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+    width: 100vw;
+    z-index: 98;
+}
+
+.menu-item {
+    color: #FFFFFF;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 14px;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.menu-item-title {
+    font-size: 20px;
+}
+
+.hamburger-icon:hover .menu {
+    display: block;
+}
+
+.border-rounded {
+    border: 1px solid #000000;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    justify-content: space-between;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.border-rounded:hover {
+    text-decoration: none;
+    background-color: #F98D2A;
+    border-color: #F98D2A;
+}
+
+.border-rounded:hover span {
+    color: white !important;
+}
+
+.border-rounded:hover img {
+    filter: invert(1);
+}
+
+.rounded {
+    border-radius: 25px;
+    display: inline-block; 
+    padding: 8px 25px; 
+    background-color: #000000;
+}
+
+.rounded:hover {
+    text-decoration: none;
+    background-color: #F98D2A !important;
+    border-color: white !important;
+    color: white !important;
+}
+
+.rounded a:hover span {
+    color: white !important;
+}
+
+.rounded a:hover img {
+    filter: invert(1) !important;
+}
+
+
+.content-wrapper {
+    width: 1300px;
+    margin: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+
+.aksar-normal {
+    font-family: 'Akshar';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.almarai-normal {
+    font-family: 'Almarai';
+    font-style: normal;
+    font-weight: 300;
+}
+
+.roboto-normal {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
