@@ -12,10 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@400;600;700&family=Almarai:wght@300&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <!-- <link rel="stylesheet" href="../assets/css/myassets.css"> -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- <link rel="stylesheet" href="assets/css/myassets.css"> -->
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
 
@@ -28,22 +28,22 @@
         <div class="content-wrapper">
             <div class="d-flex flex-row justify-content-between">
                 <div class="nav-left" style="padding-top: 2rem;padding-bottom: 2rem; margin-left: 0px; width: 243px; border-right: 1px solid #000000; text-align: left;">
-                    <img src="../assets/img/logo-nav-left.svg" alt="" srcset="">
+                    <img src="assets/img/logo-nav-left.svg" alt="" srcset="">
                     <div style="margin-bottom: 1rem;"></div>
                     <a href="#about" class="border-rounded">
                         <div class="d-flex justify-content-between ">
                             <span style="font-size: 9px; font-weight: 1000; letter-spacing: 2%; color: #000000; margin-right: 3rem;" class="almarai-normal">LEARN MORE</span>
-                            <img src="../assets/img/right-arrow-sm.svg" alt="" srcset="" width="8px" height="9px" style="margin-top: 2px;"/>
+                            <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" width="8px" height="9px" style="margin-top: 2px;"/>
                         </div>
                     </a>
                 </div>
                 <div style="padding-top: 3rem; margin-left: 20px; width: 814px; text-align: center;" class="nav-left">
                     <a href="index.html">
-                        <img src="../assets/img/chttnlogo-black.svg" alt="" srcset="">
+                        <img src="assets/img/chttnlogo-black.svg" alt="" srcset="">
                     </a>
                 </div>
                 <div class="hamburger-icon" style="text-align: right;">
-                    <img src="../assets/img/hamburger-icon.svg" alt="" srcset="" onmouseover="showMenu()" onclick="showMenu()">
+                    <img src="assets/img/hamburger-icon.svg" alt="" srcset="" style="padding: 3px">
                 </div>  
             </div>
         </div>
@@ -55,11 +55,11 @@
         <table style="width: 100%">
             <tr style=" border-bottom: 1px solid #000000;">
                 <td style="width: 67px; text-align: center; border-right: 1px solid #000000;">
-                    <img src="../assets/img/hamburger-icon.svg" alt="" srcset="" onclick="showMenu()">
+                    <img src="assets/img/hamburger-icon.svg" alt="" srcset="" onclick="showMenu()">
                 </td>
                 <td style="text-align: center; padding: 20px 0; padding-top: 30px;">
                     <a href="index.html" style="margin-left: -50px;">
-                        <img src="../assets/img/chttnlogo-black.svg" alt="" srcset="" style="width: 72px;">
+                        <img src="assets/img/chttnlogo-black.svg" alt="" srcset="" style="width: 72px;">
                     </a>
                 </td>
             </tr>
@@ -68,50 +68,55 @@
     <!-- END_NAVBAR_MOBILE -->
 
     <section id="menu" class="menu" style="background-color: #000;">
-        <div class="menu-item">
+        <div class="menu-item d-none-desktop">
+            <div class="container" onclick="showMenu(0)" id="close" style="cursor: pointer;">
+                <img src="assets/img/close.svg" alt="" srcset="" style="filter: invert(1); height: 20px;">
+            </div>
+        </div>
+        <div class="menu-item" style="margin-top: 40px;">
             <span class="aksar-normal menu-item-title">BRAND UNDER CHATATAN GROUP</span>
         </div>
         <hr>
         <div class="menu-item">
-            <a href="">
+            <a href="https://chatatan.com/chatbarber.html">
                 CHAT BARBER
             </a>
         </div>
         <div class="menu-item">
-            <a href="">
+            <a href="https://chatatan.com/chatshoe.html">
                 CHAT SHOE TREATMENT
             </a>
         </div>
         <div class="menu-item">
-            <a href="">
+            <a href="https://chatatan.com/rupaka.html">
                 RUPAKA
             </a>
         </div>
         <div class="menu-item">
-            <a href="">
+            <a href="https://chatatan.com/chatbox.html">
                 CHATBOX
             </a>
         </div>
         <div class="menu-item">
-            <a href="">
+            <a href="https://chatatan.com/chttnbasic.html">
                 CHTTN BASIC
             </a>
         </div>
         <hr>
         <div class="menu-item">
-            <a href="">
+            <a href="#about">
                 <span class="aksar-normal menu-item-title">ABOUT US</span>
             </a>
         </div>
         <hr>
         <div class="menu-item">
-            <a href="https://play.google.com/store/search?q=chatatan+group&c=apps">
+            <a href="https://play.google.com/store/apps/details?id=com.zone.chatbarber">
                 <span class="aksar-normal menu-item-title">DOWNLOAD OUR APP TO GET POINTS</span>
             </a>
         </div>
         <hr>
         <div class="menu-item">
-            <a href="">
+            <a href="https://play.google.com/store/search?q=chatatan+group&c=apps">
                 <span class="aksar-normal menu-item-title">CONTACT US</span>
             </a>
         </div>
@@ -123,7 +128,7 @@
     <div style="background-color: #FFFFFF;height: 158px;margin-bottom: 2px;" class="d-none-mobile d-none-ipad"></div>
 
     <!-- SPASI_MOBILE -->
-    <div style="background-color: #FFFFFF;height: 28px;margin-bottom: 2px;" class="d-none-desktop d-none-ipad"></div>
+    <!-- <div style="background-color: #FFFFFF;height: 28px;margin-bottom: 2px;" class="d-none-desktop d-none-ipad"></div> -->
 
     <!-- SPASI_IPAD -->
     <div style="background-color: #FFFFFF;height: 110px;margin-bottom: 2px;" class="d-none-desktop d-none-mobile"></div>
@@ -143,7 +148,7 @@
                 </span>
                 <div style="height: 10px;"></div>
                 <div>
-                    <a href="#" class="border-rounded">
+                    <a href="https://linktr.ee/chatatangroupstores" class="border-rounded">
                         <div class="d-flex justify-content-between">
                             <span class="almarai-normal" style="font-size: 12px; color: #000000; margin-right: 4rem; letter-spacing: 0.002rem;">VISIT OUR STORE</span>
                             <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" />
@@ -173,7 +178,7 @@
                 </span>
                 <div style="height: 10px;"></div>
                 <div>
-                    <a href="https://play.google.com/store/search?q=chatatan+group&c=apps" class="border-rounded">
+                    <a href="https://play.google.com/store/apps/details?id=com.zone.chatbarber" class="border-rounded">
                         <div class="d-flex justify-content-between">
                             <span class="almarai-normal" style="font-size: 12px; color: #000000; margin-right: 4rem; letter-spacing: 0.002rem;">DOWNLOAD APP</span>
                             <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" />
@@ -190,7 +195,7 @@
 
             <!-- CHATBARBER -->
             <div class="d-none-ipad" style="display: inline-block; position: relative; bottom: 50px; left: 375px;">
-                <a href="#" class="rounded">
+                <a href="https://chatatan.com/chatbarber.html" class="rounded">
                     <div class="text-center">
                         <span class="almarai-normal" style="font-size: 12px; color: #FFFFFF; letter-spacing: 0.002rem;">CHAT BARBER</span>
                     </div>
@@ -200,7 +205,7 @@
 
             <!-- KOSTUNGUFLAMBOYAN -->
             <div class="d-none-ipad" style="display: inline-block; position: relative; top: 80px; left: 120px;">
-                <a href="#" class="rounded">
+                <a href="https://chatatan.com/kos_ungu.html" class="rounded">
                     <div class="text-center">
                         <span class="almarai-normal" style="font-size: 12px; color: #FFFFFF; letter-spacing: 0.002rem;">KOS UNGU FLAMBOYAN</span>
                     </div>
@@ -210,7 +215,7 @@
 
             <!-- CEMPAKAGUESTHOUSE -->
             <div class="d-none-ipad" style="display: inline-block; position: relative; top: 200px; right: 120px;">
-                <a href="#" class="rounded">
+                <a href="https://chatatan.com/guest_house.html" class="rounded">
                     <div class="text-center">
                         <span class="almarai-normal" style="font-size: 12px; color: #FFFFFF; letter-spacing: 0.002rem;">CEMPAKA GUEST HOUSE</span>
                     </div>
@@ -220,7 +225,7 @@
 
             <!-- RUPAKA -->
             <div class="d-none-ipad" style="display: inline-block; position: relative; top: 325px; right: 190px;">
-                <a href="#" class="rounded">
+                <a href="https://chatatan.com/rupaka.html" class="rounded">
                     <div class="text-center">
                         <span class="almarai-normal" style="font-size: 12px; color: #FFFFFF; letter-spacing: 0.002rem;">RUPAKA</span>
                     </div>
@@ -230,7 +235,7 @@
 
             <!-- CHATBOX -->
             <div class="d-none-ipad" style="display: inline-block; position: relative; top: 10px; left: 260px;">
-                <a href="#" class="rounded">
+                <a href="https://chatatan.com/chatbox.html" class="rounded">
                     <div class="text-center">
                         <span class="almarai-normal" style="font-size: 12px; color: #FFFFFF; letter-spacing: 0.002rem;">CHATBOX</span>
                     </div>
@@ -240,7 +245,7 @@
 
              <!-- CHTTNBASIC -->
              <div class="d-none-ipad" style="display: inline-block; position: relative; top: 140px; left: 80px;">
-                <a href="#" class="rounded">
+                <a href="https://chatatan.com/chttnbasic.html" class="rounded">
                     <div class="text-center">
                         <span class="almarai-normal" style="font-size: 12px; color: #FFFFFF; letter-spacing: 0.002rem;">CHTTN BASIC</span>
                     </div>
@@ -251,7 +256,7 @@
             <!-- CHATSHOETREATMENT -->
             <div class="d-none-ipad" style="display: inline-block; position: relative; top: 310px; right: 40px; float: right;">
                 <div class="">
-                    <a href="#" class="rounded">
+                    <a href="https://chatatan.com/chatshoe.html" class="rounded">
                         <div class="text-center">
                             <span class="almarai-normal" style="font-size: 12px; color: #FFFFFF; letter-spacing: 0.002rem;">CHAT SHOE TREATMENT</span>
                         </div>
@@ -276,7 +281,7 @@
                     WE CREATED & OWN ALL OF THEM.
                 </span>
                 <div style="height: 10px;"></div>
-                <a href="#" class="rounded" style="display: inline-block; padding: 6px 10px; background-color: #FFFFFF; border: 1px solid #000000">
+                <a href="https://linktr.ee/chatatangroupstores" class="rounded" style="display: inline-block; padding: 6px 10px; background-color: #FFFFFF; border: 1px solid #000000">
                     <span class="almarai-normal" style="font-size: 10px; color: #000000; margin-right: 6rem; letter-spacing: 0.002rem; margin-top: 0px;">VISIT OUR STORE</span>
                     <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" />
                 </a>
@@ -300,7 +305,7 @@
                     BECOME THE MEMBER NOW!
                 </span>
                 <div style="height: 10px;"></div>
-                <a href="https://play.google.com/store/search?q=chatatan+group&c=apps" class="rounded" style="padding: 6px 10px; background-color: #FFFFFF; border: 1px solid #000000;">
+                <a href="https://play.google.com/store/apps/details?id=com.zone.chatbarber" class="rounded" style="padding: 6px 10px; background-color: #FFFFFF; border: 1px solid #000000;">
                     <div class="d-flex justify-content-between">
                         <span class="almarai-normal" style="font-size: 10px; color: #000000; margin-right: 4rem; letter-spacing: 0.002rem;">DOWNLOAD APP</span>
                         <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" />
@@ -329,7 +334,7 @@
                     BUSINESS GROUP SINCE 2015
                 </span>
                 <div style="height: 10px;"></div>
-                <a href="#" class="rounded" style="display: inline-block; padding: 6px 10px; border: 1px solid #000000; background-color: #FFFFFF;">
+                <a href="#about" class="rounded" style="display: inline-block; padding: 6px 10px; border: 1px solid #000000; background-color: #FFFFFF;">
                     <div class="d-flex justify-content-between">
                         <span class="almarai-normal" style="font-size: 9px; color: #000000; margin-right: 40px; letter-spacing: 0.002rem;">LEARN MORE</span>
                         <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" />
@@ -345,8 +350,8 @@
                     WE CREATED & OWN ALL OF THEM.
                 </span>
                 <div style="height: 10px;"></div>
-                <a href="#" class="rounded" style="display: inline-block; padding: 6px 10px; background-color: #FFFFFF; border: 1px solid #000000;">
-                    <div class="d-flex justify-content-between" style="margin-top: -3px;">
+                <a href="https://linktr.ee/chatatangroupstores" class="rounded" style="display: inline-block; padding: 6px 10px; border: 1px solid #000000; background-color: #FFFFFF;">
+                    <div class="d-flex justify-content-between">
                         <span class="almarai-normal" style="font-size: 9px; color: #000000; margin-right: 40px; letter-spacing: 0.002rem;">VISIT OUR STORES</span>
                         <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" />
                     </div>
@@ -367,7 +372,7 @@
                             BECOME THE MEMBER NOW!
                         </span>
                         <div style="height: 10px;"></div>
-                        <a href="https://play.google.com/store/search?q=chatatan+group&c=apps" class="rounded" style="display: inline-block; padding: 6px 10px; background-color: #FFFFFF; border: 1px solid #000000;">
+                        <a href="https://play.google.com/store/apps/details?id=com.zone.chatbarber" class="rounded" style="display: inline-block; padding: 6px 10px; background-color: #FFFFFF; border: 1px solid #000000;">
                             <div class="d-flex justify-content-between">
                                 <span class="almarai-normal" style="font-size: 9px; color: #000000; margin-right: 10px; letter-spacing: 0.002rem;">DOWNLOAD APP</span>
                                 <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" />
@@ -425,7 +430,7 @@
                                 </div>
                             </a>
                             <div style="height: 20px;"></div>
-                            <a href="https://play.google.com/store/search?q=chatatan+group&c=apps" class="rounded" style="border: 1px solid #FFFFFF; width: 100%;">
+                            <a href="https://play.google.com/store/apps/details?id=com.zone.chatbarber" class="rounded" style="border: 1px solid #FFFFFF; width: 100%;">
                                 <div class="d-flex justify-content-between">
                                     <span class="almarai-normal" style="font-size: 12px; color: #FFFFFF; letter-spacing: 0.002rem;">DOWNLOAD OUR MEMBER APP</span>
                                     <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" style="filter: invert(1);"/>
@@ -731,11 +736,11 @@
                 OR MAYBE JUST A FRIENDSHIP. <br> WE WOULD LOVE THAT!
             </h2>
             <div style="height: 10px;"></div>
-            
-            <a href="http://wa.me/6287830080800" class="rounded" style="background-color: #FFFFFF; border: 1px solid #000000;">
-                <div class="d-flex justify-content-between">
-                    <span class="almarai-normal" style="font-size: 10px; color: #000000; margin-right: 45px; letter-spacing: 0.002rem;">CONTACT US VIA WHATSAPP</span>
-                    <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" />
+
+            <a href="http://wa.me/6287830080800" class="border-rounded">
+                <div class="d-flex justify-content-between" style="padding: 3px;">
+                    <span style="font-size: 12px; letter-spacing: 2%; color: #000000; margin-right: 3rem;" class="almarai-normal">CONTACT US VIA WHATSAPP</span>
+                    <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" width="8px" height="9px" style="margin-top: 2px;"/>
                 </div>
             </a>
         
@@ -758,31 +763,65 @@
                         <h4 class="aksar-normal" style="font-weight: 400; font-size: 18px; margin-bottom: 20px;line-height: 20px;">ABOUT US
                         </h4>
                         <ul style="list-style: none; margin-top: 20px; margin-bottom: 20px; padding-left: 0;">
-                            <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">OUR STORY</li>
+                            <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">
+                                <a href="https://chatatan.com/index.html#about" class="text-white">
+                                    OUR STORY
+                                </a>
+                            </li>
                         </ul>
                     </td>
                     <td style="width: 8%;">
                         <h4 class="aksar-normal" style="font-weight: 400; font-size: 18px; margin-bottom: 20px;line-height: 20px;">BRANDS
                         </h4>
                         <ul style="list-style: none; margin-top: 20px; margin-bottom: 20px; padding-left: 0;">
-                            <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">CHAT BARBER</li>
-                            <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">CHAT SHOE TREATMENT</li>
-                            <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">RUPAKA</li>
-                            <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">CHATBOX</li>
-                            <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">CHTTN BASIC</li>
+                            <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">
+                                <a href="https://chatatan.com/chatbarber.html" class="text-white">
+                                    CHAT BARBER
+                                </a>
+                            </li>
+                            <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">
+                                <a href="https://chatatan.com/chatshoe.html" class="text-white">
+                                    CHAT SHOE TREATMENT
+                                </a>
+                            </li>
+                            <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">
+                                <a href="https://chatatan.com/rupaka.html" class="text-white">
+                                    RUPAKA
+                                </a>
+                            </li>
+                            <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">
+                                <a href="https://chatatan.com/chatbox.html" class="text-white">
+                                    CHATBOX
+                                </a>
+                            </li>
+                            <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">
+                                <a href="https://chatatan.com/chttnbasic.html" class="text-white">
+                                    CHTTN BASIC
+                                </a>
+                            </li>
                         </ul>
                     </td>
                     <td style="width: 10%;">
                         <h4 class="aksar-normal" style="font-weight: 400; font-size: 18px; margin-bottom: 20px;line-height: 20px;">RENTALS
                         </h4>
                         <ul style="list-style: none; margin-top: 20px; margin-bottom: 20px; padding-left: 0;">
-                            <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">KOST UNGU FLAMBOYAN</li>
-                            <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">CEMPAKA GUEST HOUSE</li>
+                            <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">
+                                <a href="https://chatatan.com/kos_ungu.html" class="text-white">
+                                    KOST UNGU FLAMBOYAN
+                                </a>
+                            </li>
+                            <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">
+                                <a href="https://chatatan.com/guest_house.html" class="text-white">
+                                    CEMPAKA GUEST HOUSE
+                                </a>
+                            </li>
                         </ul>
                         <div style="height: 4px !important;"></div>
                         <h2 class="aksar-normal" style="font-weight: 400; font-size: 18px; margin-bottom: 20px;line-height: 20px;">CONTACT US</h2>
                         <ul style="list-style: none; margin-top: 20px; margin-bottom: 20px; padding-left: 0;">
-                            <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">CONTACTUS@CHATATANGROUP.COM</li>
+                            <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">
+                                <a href="mailto:contactus@chatatangroup.com" class="text-white">CONTACTUS@CHATATANGROUP.COM</a class="text-white">
+                            </li>
                         </ul>
                     </td>
                     <td style="width: 10%;">
@@ -791,10 +830,10 @@
                         </h4>
                         <div style="margin-bottom: 20px;"></div>
                         
-                        <a href="https://play.google.com/store/search?q=chatatan+group&c=apps" class="rounded" style="border: 1px solid #FFFFFF;">
+                        <a href="https://play.google.com/store/apps/details?id=com.zone.chatbarber" class="rounded" style="border: 1px solid #FFFFFF;">
                             <div class="d-flex justify-content-between">
                                 <span class="almarai-normal" style="font-size: 12px; color: #FFFFFF; margin-right: 4.4rem; letter-spacing: 0.002rem;">DOWNLOAD APP</span>
-                                <img src="../assets/img/right-arrow-sm.svg" alt="" srcset="" style="filter: invert(1)"/>
+                                <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" style="filter: invert(1)"/>
                             </div>
                         </a>
                         
@@ -802,7 +841,7 @@
                     <td style="width: 5%;">
                         <div style="display: flex; flex-direction: column;">
                             <div class="text-center">
-                                <img src="../assets/img/chatatanlogo.svg" alt="" style="width: 119px; margin-top: 15px;">
+                                <img src="assets/img/chatatanlogo.svg" alt="" style="width: 119px; margin-top: 15px;">
                             </div>
                             <div style="margin-bottom: 1.4rem;"></div>
                             <div class="text-center">
@@ -811,10 +850,10 @@
                             <div style="margin-bottom: 1.4rem;"></div>
                             <div class="text-center">
                                 <a href="https://linktr.ee/chatatangroupstores" target="_blank">
-                                    <img src="../assets/img/instagram.svg" alt="" style="margin: 0.5rem; height: 30px;">
+                                    <img src="assets/img/instagram.svg" alt="" style="margin: 0.5rem; height: 30px;">
                                 </a>
                                 <a href="https://youtube.com/channel/UC6ral22t0ifuuSyXCFCbq3w" target="_blank">
-                                    <img src="../assets/img/youtube.svg" alt="" style="filter: invert(1); height: 30px ;">
+                                    <img src="assets/img/youtube.svg" alt="" style="filter: invert(1); height: 30px ;">
                                 </a>
                             </div>
                         </div>
@@ -826,7 +865,7 @@
         <div>
             <div class="content-wrapper" style="margin-bottom: 0px">
                 <a href="#bigHeader">
-                    <img src="../assets/img/arrow-top-circle-white.svg" alt="" srcset="" style="position: relative; left: 5%; top: 40px; width: 43px; height: 43px;">
+                    <img src="assets/img/arrow-top-circle-white.svg" alt="" srcset="" style="position: relative; left: 5%; top: 40px; width: 43px; height: 43px;">
                 </a>
             </div>
             <hr style="width: 100%; height:1px; background-color: #FFFFFF;">
@@ -847,7 +886,7 @@
     <div class="footer d-none-desktop d-none-ipad">
         <div style="padding: 20px; padding-top: 40px;">
             <div style="display: inline;">
-                <img src="../assets/img/chatatanlogo.svg" alt="" style="width: 100px;">
+                <img src="assets/img/chatatanlogo.svg" alt="" style="width: 100px;">
             </div>
             <div style="float: right; margin-top: -14px;">
                 <span class="aksar-normal" style="font-size: 14px; text-align: center; line-height: 50px; color: #FFFFFF;">
@@ -855,10 +894,10 @@
                 </span>
                 <div style="text-align: center; width: 60px; margin-top: -8px;">
                     <a href="https://linktr.ee/chatatangroupstores" target="_blank">
-                        <img src="../assets/img/instagram.svg" alt="" style="margin-right: 5px;">
+                        <img src="assets/img/instagram.svg" alt="" style="margin-right: 5px;">
                     </a>
                     <a href="https://youtube.com/channel/UC6ral22t0ifuuSyXCFCbq3w" target="_blank">
-                        <img src="../assets/img/youtube.svg" alt="" style="filter: invert(1); height: 24px;">
+                        <img src="assets/img/youtube.svg" alt="" style="filter: invert(1); height: 24px;">
                     </a>
                 </div>
             </div>
@@ -869,7 +908,11 @@
                 ABOUT US
             </h4>
             <ul style="list-style: none; margin-top: 0px; margin-bottom: 10px; padding-left: 0;">
-                <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 10px;">OUR STORY</li>
+                <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 10px;">
+                    <a href="https://chatatan.com/index.html#about" class="text-white">
+                        OUR STORY
+                    </a>
+                </li>
             </ul>
         </div>
         <hr style="width: 100vw; height: 1px; background-color: #ffffffb5; border-color: #000; margin-bottom: 8px; margin-top: 0;">
@@ -877,11 +920,31 @@
             <h4 class="aksar-normal" style="font-weight: 400; font-size: 16px; margin-bottom: 15px;line-height: 20px;">BRANDS
             </h4>
             <ul style="list-style: none; margin-top: 0px; margin-bottom: 0px; padding-left: 0;">
-                <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">CHAT BARBER</li>
-                <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">CHAT SHOE TREATMENT</li>
-                <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">RUPAKA</li>
-                <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">CHATBOX</li>
-                <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">CHTTN BASIC</li>
+                <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">
+                    <a href="https://chatatan.com/chatbarber.html" class="text-white">
+                        CHAT BARBER
+                    </a>
+                </li>
+                <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">
+                    <a href="https://chatatan.com/chatshoe.html" class="text-white">
+                        CHAT SHOE TREATMENT
+                    </a>
+                </li>
+                <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">
+                    <a href="https://chatatan.com/rupaka.html" class="text-white">
+                        RUPAKA
+                    </a>
+                </li>
+                <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">
+                    <a href="https://chatatan.com/chatbox.html" class="text-white">
+                        CHATBOX
+                    </a>
+                </li>
+                <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">
+                    <a href="https://chatatan.com/chttnbasic.html" class="text-white">
+                        CHTTN BASIC
+                    </a>
+                </li>
             </ul>
         </div>
         <hr style="width: 100vw; height: 1px; background-color: #ffffffb5; border-color: #000; margin-bottom: 8px; margin-top: 0;">
@@ -889,16 +952,24 @@
             <h4 class="aksar-normal" style="font-weight: 400; font-size: 16px;line-height: 20px;">RENTALS
             </h4>
             <ul style="list-style: none; margin-top: 8px; margin-bottom: 8px; padding-left: 0;">
-                <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 8px;">KOST UNGU FLAMBOYAN</li>
-                <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 8px;">CEMPAKA GUEST HOUSE</li>
+                <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 8px;">
+                    <a href="https://chatatan.com/kos_ungu.html" class="text-white">
+                        KOST UNGU FLAMBOYAN
+                    </a>
+                </li>
+                <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 8px;">
+                    <a href="https://chatatan.com/guest_house.html" class="text-white">
+                        CEMPAKA GUEST HOUSE
+                    </a>
+                </li>
             </ul>
         </div>
         <hr style="width: 100vw; height: 1px; background-color: #ffffffb5; border-color: #000; margin-bottom: 8px; margin-top: 0;">
         <div style="color: #FFFFFF; padding: 20px">
             <h4 class="aksar-normal" style="font-weight: 400; font-size: 16px; margin-bottom: 10px;line-height: 20px;">CONTACT US</h4>
             <ul style="list-style: none; margin-top: 8px; margin-bottom: 8px; padding-left: 0;">
-                <li class="almarai-normal" style="font-size: 12px;line-height: 25px;">CONTACTUS@CHATATANGROUP.COM</li>
-            </ul>
+                <li class="almarai-normal" style="font-size: 12px;line-height: 25px;"><a href="mailto:contactus@chatatangroup.com" class="text-white">CONTACTUS@CHATATANGROUP.COM</a></li>
+            </ul class="text-white">
         </div>
         <hr style="width: 100vw; height: 1px; background-color: #ffffffb5; border-color: #000; margin-bottom: 8px; margin-top: 0;">
         <div style="color: #FFFFFF; padding: 15px 20px">
@@ -915,36 +986,70 @@
                     ABOUT US
                 </h4>
                 <ul style="list-style: none; margin-top: 0px; margin-bottom: 10px; padding-left: 0;">
-                    <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 10px;">OUR STORY</li>
+                    <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 10px;">
+                        <a href="https://chatatan.com/index.html#about" class="text-white">
+                            OUR STORY
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div style="flex: 1; color: #FFFFFF; padding: 20px;">
                 <h4 class="aksar-normal" style="font-weight: 400; font-size: 16px; margin-bottom: 15px;line-height: 20px;">BRANDS
                 </h4>
                 <ul style="list-style: none; margin-top: 0px; margin-bottom: 0px; padding-left: 0;">
-                    <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">CHAT BARBER</li>
-                    <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">CHAT SHOE TREATMENT</li>
-                    <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">RUPAKA</li>
-                    <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">CHATBOX</li>
-                    <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">CHTTN BASIC</li>
+                    <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">
+                        <a href="https://chatatan.com/chatbarber.html" class="text-white">
+                            CHAT BARBER
+                        </a>
+                    </li>
+                    <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">
+                        <a href="https://chatatan.com/chatshoe.html" class="text-white">
+                            CHAT SHOE TREATMENT
+                        </a>
+                    </li>
+                    <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">
+                        <a href="https://chatatan.com/rupaka.html" class="text-white">
+                            RUPAKA
+                        </a>
+                    </li>
+                    <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">
+                        <a href="https://chatatan.com/chatbox.html" class="text-white">
+                            CHATBOX
+                        </a>
+                    </li>
+                    <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">
+                        <a href="https://chatatan.com/chttnbasic.html" class="text-white">
+                            CHTTN BASIC
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div style="flex: 1; color: #FFFFFF; padding: 20px;">
                 <h4 class="aksar-normal" style="font-weight: 400; font-size: 16px; margin-bottom: 15px;line-height: 20px;">RENTALS</h4>
                 <ul style="list-style: none; margin-top: 0px; margin-bottom: 0px; padding-left: 0;">
-                    <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">KOST UNGU FLAMBOYAN</li>
-                    <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">CEMPAKA GUEST HOUSE</li>
+                    <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">
+                        <a href="https://chatatan.com/kos_ungu.html" class="text-white">
+                            KOST UNGU FLAMBOYAN
+                        </a>
+                    </li>
+                    <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">
+                        <a href="https://chatatan.com/guest_house.html" class="text-white">
+                            CEMPAKA GUEST HOUSE
+                        </a>
+                    </li>
                 </ul>
                 <div style="height: 4px !important;"></div>
                 <h4 class="aksar-normal" style="font-weight: 400; font-size: 16px; margin-bottom: 15px;line-height: 20px;">CONTACT US</h4>
                 <ul style="list-style: none; margin-top: 0px; margin-bottom: 0px; padding-left: 0;">
-                    <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">CONTACTUS@CHATATANGROUP.COM</li>
+                    <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">
+                        <a href="mailto:contactus@chatatangroup.com" class="text-white">CONTACTUS@CHATATANGROUP.COM</a class="text-white">
+                    </li>
                 </ul>
             </div>
         </div>
         <div style="display: flex; flex-direction: row;">
             <div style="flex: 1; color: #FFFFFF; padding-bottom: 20px; padding-top: 30px; padding-left: 30px; padding-right: 30px;">
-                <img src="../assets/img/chatatanlogo.svg" alt="" style="width: 100px;">
+                <img src="assets/img/chatatanlogo.svg" alt="" style="width: 100px;">
             </div>
             <div style="flex: 1; color: #FFFFFF; padding: 20px;">
                 <span class="aksar-normal" style="font-size: 14px; text-align: center; line-height: 50px; color: #FFFFFF;">
@@ -952,11 +1057,11 @@
                 </span>
                 <div style="text-align: center; width: 60px; margin-top: -8px;">
                     <a href="https://linktr.ee/chatatangroupstores" target="_blank">
-                        <img src="../assets/img/instagram.svg" alt="">
+                        <img src="assets/img/instagram.svg" alt="">
                     </a>
                     <div style="margin: 2px 0; display: inline;"></div>
                     <a href="https://youtube.com/channel/UC6ral22t0ifuuSyXCFCbq3w" target="_blank">
-                        <img src="../assets/img/youtube.svg" alt="" style="height: 24px; filter: invert(1);">
+                        <img src="assets/img/youtube.svg" alt="" style="height: 24px; filter: invert(1);">
                     </a>
                 </div>
             </div>
@@ -964,10 +1069,10 @@
                 <h4 class="aksar-normal" style="font-weight: 400; font-size: 18px; line-height: 27px;">
                     GET POINTS AND REDEEM IT. <br />BECOME THE MEMBER NOW!
                 </h4>
-                <a href="https://play.google.com/store/search?q=chatatan+group&c=apps" class="rounded" style="display: inline-block; padding: 6px 10px; border: 1px solid #FFFFFF;">
+                <a href="https://play.google.com/store/apps/details?id=com.zone.chatbarber" class="rounded" style="display: inline-block; padding: 6px 10px; border: 1px solid #FFFFFF;">
                     <div class="d-flex justify-content-between">
                         <span class="almarai-normal" style="font-size: 10px; color: #FFF; margin-right: 4.4rem; letter-spacing: 0.002rem;">DOWNLOAD APP</span>
-                        <img src="../assets/img/right-arrow-sm.svg" alt="" srcset="" style="filter: invert(1);" />
+                        <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" style="filter: invert(1);" />
                     </div>
                 </a>
             </div>
@@ -980,22 +1085,40 @@
         </div>
     </div>
 
-    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
     <script>
+
+        $(".hamburger-icon").click(function () {
+            $(".menu").slideDown(200, () => {
+                $(".menu").css('display', "block");
+            })
+        })
+
+        $(".menu").mouseleave(function () {
+            $(".menu").slideUp(200, () => {
+                $(".menu").css('display', "none");
+            })
+        })
 
         function showMenu(off = null)
         {
             let menu = document.getElementById("menu").style.display;
 
             if (off == 0) {
-                document.getElementById("menu").style.display = "none";
+                // document.getElementById("menu").style.display = "none";
+                $(".menu").slideUp(200, () => {
+                    $(".menu").css('display', "none");
+                })
             } else if (off == 1) {
                 document.getElementById("menu").style.display = "block";
             } else {
                 if (menu == "block") {
-                    document.getElementById("menu").style.display = "none";
+                    // document.getElementById("menu").style.display = "none";
+                    $(".menu").slideUp(200, () => {
+                        $(".menu").css('display', "none");
+                    })
                 } else {
                     document.getElementById("menu").style.display = "block";
                 }
