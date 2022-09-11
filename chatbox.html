@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHAT BOX | WE SERVE BETTER</title>
+    <title>CHATATAN GROUP| WE SERVE BETTER</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -396,7 +396,7 @@
             </tr>
             <tr style="border-top: 1px solid #000000;">
                 <td style="padding: 20px;" colspan="2">
-                    <a href="#" class="border-rounded">
+                    <a href="https://drive.google.com/drive/folders/1LscQgGPlTUkGyaI5FEaVHqAW5nqq3kTT" class="border-rounded">
                         <div class="d-flex justify-content-between" style="padding: 3px;">
                             <span style="font-size: 12px; letter-spacing: 2%; color: #000000; margin-right: 3rem;" class="almarai-normal">SEE FULL MENU</span>
                             <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" width="8px" height="9px" style="margin-top: 2px;"/>
@@ -532,7 +532,7 @@
                 </tr>
                 <tr style="border-top: 1px solid #000000;">
                     <td colspan="4" style="padding: 2rem; padding-left: 60px;">
-                        <a href="#" class="border-rounded">
+                        <a href="https://drive.google.com/drive/folders/1LscQgGPlTUkGyaI5FEaVHqAW5nqq3kTT" class="border-rounded">
                             <div class="d-flex justify-content-between" style="padding: 3px;">
                                 <span style="font-size: 12px; letter-spacing: 2%; color: #000000; margin-right: 4rem; margin-top: 2px;" class="almarai-normal">SEE FULL MENU</span>
                                 <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" width="8px" height="9px" style="margin-top: 5px;"/>
@@ -995,7 +995,9 @@
                     $(".menu").css('display', "none");
                 })
             } else if (off == 1) {
-                document.getElementById("menu").style.display = "block";
+                $(".menu").slideDown(200, () => {
+                    $(".menu").css('display', "block");
+                })
             } else {
                 if (menu == "block") {
                     // document.getElementById("menu").style.display = "none";
@@ -1003,7 +1005,9 @@
                         $(".menu").css('display', "none");
                     })
                 } else {
-                    document.getElementById("menu").style.display = "block";
+                    $(".menu").slideDown(200, () => {
+                        $(".menu").css('display', "block");
+                    })
                 }
             }
             
