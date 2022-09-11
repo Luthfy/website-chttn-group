@@ -208,3 +208,10 @@ nav .nav-left a {
     color: #FFFFFF !important;
     text-decoration: none;
 }
+
+.additional-hover:hover {
+    text-decoration: none;
+    background-color: #F98D2A !important;
+    border-color: white !important;
+    color: white !important;
+}
