@@ -36,6 +36,13 @@
     nav {
         position: relative !important;
     }
+
+    .image-slides-item {
+        margin: 1rem;
+        padding-right: 30px;
+        width: 98vw;
+        height: auto;
+    }
 }
 
 @media screen and (min-width: 600px)
