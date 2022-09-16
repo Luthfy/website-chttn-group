@@ -5,19 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHATATAN GROUP| WE SERVE BETTER</title>
+    <title>CHATBOX | WE SERVE BETTER</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@400;600;700&family=Almarai:wght@300&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css"> -->
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
     <link rel="stylesheet" href="assets/css/styles.css">
     <!-- <link rel="stylesheet" href="assets/css/myassets.css"> -->
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+
 
 </head>
 
@@ -30,7 +37,7 @@
                 <div class="nav-left" style="padding-top: 2rem;padding-bottom: 2rem; margin-left: 0px; width: 243px; border-right: 1px solid #000000; text-align: left;">
                     <img src="assets/img/logo-nav-left.svg" alt="" srcset="">
                     <div style="margin-bottom: 1rem;"></div>
-                    <a href="#about" class="border-rounded">
+                    <a href="index.html#about" class="border-rounded">
                         <div class="d-flex justify-content-between ">
                             <span style="font-size: 9px; font-weight: 1000; letter-spacing: 2%; color: #000000; margin-right: 3rem;" class="almarai-normal">LEARN MORE</span>
                             <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" width="8px" height="9px" style="margin-top: 2px;"/>
@@ -163,7 +170,7 @@
         </div>
     </div>
 
-    <div class="d-none-mobile" style="width: 100%; height: 542px; background-color: #000000;">
+    <div id="bigHeader" class="d-none-mobile" style="width: 100%; height: 542px; background-color: #000000;">
         <div class="content-wrapper">
             <div style="height: 110px;"></div>
             <img src="assets/img/chatbox.svg" alt="" srcset="" style="display: block; margin: auto; width: 180px;">
@@ -228,7 +235,7 @@
                             Located in Cempaka street, Banjarmasin, our coffee shop is exactly side by side with Chat Barber, a gentleman haircut barbershop. We operate daily, morning until evening, 10am - 11pm. Come visit and let our barista serve and make you some espresso.
                         </p>
                         <div style="height: 6px;"></div>
-                        <a href="https://maps.app.goo.gl/UawnzQiebevsX3PE9" class="border-rounded">
+                        <a href="https://maps.app.goo.gl/UawnzQiebevsX3PE9" class="border-rounded" target="_blank">
                             <div class="d-flex justify-content-between" style="padding: 3px;">
                                 <span style="font-size: 12px; letter-spacing: 2%; color: #000000; margin-right: 3rem;" class="almarai-normal">DIRECTION</span>
                                 <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" width="8px" height="9px" style="margin-top: 2px;"/>
@@ -396,7 +403,7 @@
             </tr>
             <tr style="border-top: 1px solid #000000;">
                 <td style="padding: 20px;" colspan="2">
-                    <a href="https://drive.google.com/drive/folders/1LscQgGPlTUkGyaI5FEaVHqAW5nqq3kTT" class="border-rounded">
+                    <a class="border-rounded" id="btnSeeMenu" data-toggle="modal" data-target="#myModal">
                         <div class="d-flex justify-content-between" style="padding: 3px;">
                             <span style="font-size: 12px; letter-spacing: 2%; color: #000000; margin-right: 3rem;" class="almarai-normal">SEE FULL MENU</span>
                             <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" width="8px" height="9px" style="margin-top: 2px;"/>
@@ -532,7 +539,7 @@
                 </tr>
                 <tr style="border-top: 1px solid #000000;">
                     <td colspan="4" style="padding: 2rem; padding-left: 60px;">
-                        <a href="https://drive.google.com/drive/folders/1LscQgGPlTUkGyaI5FEaVHqAW5nqq3kTT" class="border-rounded">
+                        <a class="border-rounded" id="btnSeeMenu" data-toggle="modal" data-target="#myModal">
                             <div class="d-flex justify-content-between" style="padding: 3px;">
                                 <span style="font-size: 12px; letter-spacing: 2%; color: #000000; margin-right: 4rem; margin-top: 2px;" class="almarai-normal">SEE FULL MENU</span>
                                 <img src="assets/img/right-arrow-sm.svg" alt="" srcset="" width="8px" height="9px" style="margin-top: 5px;"/>
@@ -647,7 +654,7 @@
                         </h4>
                         <ul style="list-style: none; margin-top: 20px; margin-bottom: 20px; padding-left: 0;">
                             <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 1.2rem;">
-                                <a href="https://chatatan.com/index.html#about" class="text-white">
+                                <a href="#about" class="text-white">
                                     OUR STORY
                                 </a>
                             </li>
@@ -792,7 +799,7 @@
             </h4>
             <ul style="list-style: none; margin-top: 0px; margin-bottom: 10px; padding-left: 0;">
                 <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 10px;">
-                    <a href="https://chatatan.com/index.html#about" class="text-white">
+                    <a href="#about" class="text-white">
                         OUR STORY
                     </a>
                 </li>
@@ -870,7 +877,7 @@
                 </h4>
                 <ul style="list-style: none; margin-top: 0px; margin-bottom: 10px; padding-left: 0;">
                     <li class="almarai-normal" style="font-size: 12px;line-height: 25px;margin-bottom: 10px;">
-                        <a href="https://chatatan.com/index.html#about" class="text-white">
+                        <a href="#about" class="text-white">
                             OUR STORY
                         </a>
                     </li>
@@ -968,7 +975,26 @@
         </div>
     </div>
 
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" style="width: 80vw;" data-dismiss="modal">
+      
+          <!-- Modal content-->
+          <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <!-- <div class="modal-header"> -->
+              <!-- <h4 class="modal-title">Modal Header</h4> -->
+            <!-- </div> -->
+            <div class="modal-body">
+              <img src="assets/img/menu_chatbox.tif" alt="" style="width: 100%;">
+            </div>
+          </div>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
     <script>
